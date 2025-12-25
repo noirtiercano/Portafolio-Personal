@@ -6,8 +6,8 @@ const Projects = () => {
       name: 'Galeno',
       description:
         'Sistema de gestión de inventarios, ventas, generación de reportes y dispensación de medicamentos controlados para farmacias',
-      github: 'https://github.com/TUTYWALO/v0-pharmacy-management-software.git',
-      demo: 'https://v0-pharmacy-management-software-black.vercel.app/', 
+      github: 'https://github.com/noirtiercano/galeno',
+      demo: '', 
       image: '/img/galeno-logo.png',
     },
     {
@@ -64,6 +64,7 @@ const Projects = () => {
 
               {/* 🔹 Botones */}
               <div className="mt-auto flex space-x-3">
+              {project.demo && project.demo !== '' && (
                 <a
                   href={project.demo}
                   target="_blank"
@@ -72,6 +73,7 @@ const Projects = () => {
                 >
                   Ver Proyecto
                 </a>
+                )}
                 <a
                   href={project.github}
                   target="_blank"
